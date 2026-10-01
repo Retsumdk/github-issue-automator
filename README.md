@@ -15,9 +15,13 @@ This repository contains a CLI tool for automatically creating, labeling, and as
 ## Installation
 
 ```bash
-npm install -g github:Retsumdk/github-issue-automator
-# Or use npx
+# Run without installing (recommended for git sources)
 npx github:Retsumdk/github-issue-automator --help
+
+# Or install globally from a local clone (npm skips devDependencies for
+# global git installs, so build from a checkout first)
+git clone https://github.com/Retsumdk/github-issue-automator.git
+cd github-issue-automator && npm install && npm run build && npm install -g .
 ```
 
 ## Configuration
