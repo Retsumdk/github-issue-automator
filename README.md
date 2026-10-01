@@ -15,9 +15,9 @@ This repository contains a CLI tool for automatically creating, labeling, and as
 ## Installation
 
 ```bash
-npm install -g github-issue-automator
+npm install -g github:Retsumdk/github-issue-automator
 # Or use npx
-npx github-issue-automator --help
+npx github:Retsumdk/github-issue-automator --help
 ```
 
 ## Configuration

@@ -67,7 +67,7 @@ export class GitHubIssueAutomator {
   }
 
   async listLabels(): Promise<string[]> {
-    const response = await this.octokit.rest.issues.listLabels({
+    const response = await this.octokit.rest.issues.listLabelsForRepo({
       owner: this.owner,
       repo: this.repo,
     });
