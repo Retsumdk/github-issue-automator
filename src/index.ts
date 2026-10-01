@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { Octokit } from "octokit";
 
 interface IssueConfig {
@@ -195,4 +196,11 @@ Options:
   --issue      Issue number
 `);
   }
+}
+
+if (require.main === module) {
+  main().catch((error: Error) => {
+    console.error(error.message);
+    process.exit(1);
+  });
 }
